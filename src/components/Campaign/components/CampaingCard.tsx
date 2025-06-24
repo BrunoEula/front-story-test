@@ -1,4 +1,4 @@
-import type { CampaignCardProps } from "./campaignTypes/CampaignTypes";
+import type { CampaignCardProps } from "../campaignTypes/CampaignTypes";
 
 export default function CampaignCard({ label, value, sub, highlight }: CampaignCardProps) {
     let valueColor = "text-black";

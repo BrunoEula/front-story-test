@@ -1,4 +1,4 @@
-import type { Campaign } from "./campaignTypes/CampaignTypes";
+import type { Campaign } from "../campaignTypes/CampaignTypes";
 import CampaignCard from "./CampaingCard";
 
 interface Props {
