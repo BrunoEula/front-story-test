@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import type { Campaign } from "../components/Campaign/campaignTypes/CampaignCardTypes";
+import type { Campaign } from "../components/Campaign/campaignTypes/CampaignTypes";
+import CampaignForm from "../components/Campaign/components/CampaingForm";
+import CampaignTable from "../components/Campaign/components/CampaingTable";
 import { initialData } from "../components/Campaign/data/InitialData";
-import CampaignMetrics from "../components/Campaign/CampaignMetrics";
-import CampaignForm from "../components/Campaign/CampaingForm";
-import CampaignTable from "../components/Campaign/CampaingTable";
+import CampaignMetrics from "../components/Campaign/components/CampaignMetrics";
 
 type SortField = "name" | "date" | "profit" | null;
 
@@ -86,19 +86,19 @@ export default function Dashboard() {
           onClick={() => setSortBy("name")}
           className="px-3 py-1 border rounded bg-gray-100 hover:bg-gray-200 text-sm"
         >
-          Ordenar by name
+          Order by name
         </button>
         <button
           onClick={() => setSortBy("date")}
           className="px-3 py-1 border rounded bg-gray-100 hover:bg-gray-200 text-sm"
         >
-          Ordenar by date
+          Order by date
         </button>
         <button
           onClick={() => setSortBy("profit")}
           className="px-3 py-1 border rounded bg-gray-100 hover:bg-gray-200 text-sm"
         >
-          Ordenar by profit
+          Order by profit
         </button>
       </div>
       <CampaignTable

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Campaign } from "./campaignTypes/CampaignCardTypes";
+import type { Campaign } from "../campaignTypes/CampaignTypes";
 
 interface CampaignFormProps {
   onSubmit: (campaign: Campaign) => void;
